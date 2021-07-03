@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt]{article} 
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}		
+\usepackage[utf8]{inputenc}	
+\usepackage[russian]{babel}	
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = blue, %Colour for external hyperlinks
+	linkcolor    = blue, %Colour of internal links
+	citecolor   = green %Colour of citations
+}
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{mathrsfs}
+
+\oddsidemargin=0mm \topmargin=0mm \headheight=0mm \headsep=0mm
+\textwidth=170mm \textheight=250mm
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+
+
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{proposition}{Утверждение}
+\newtheorem{lemma}{Лемма}
+\newtheorem{conjecture}{Гипотеза}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}
+
+\newcounter{iii}                                        
+\newcommand{\ii}{\refstepcounter{iii} \arabic{iii}. }
+\newcommand{\newsect}[3]{\section*{\ii\textit{#1.} Предложил \textit{#2}\footnote{email: \href{mailto:#3}{#3} }}}
+
+\begin{document}
+	
+	
+	\newsect{Неравенство Фингера}{А.\,А.~Полянский}{alexander.polyanskii@yandex.ru}
+	
+	This question is related to Kneser colorings and would, in particular, have implications for coloring random Kneser graphs. For details, see \cite{KK}.
+	
+	
+	\begin{thebibliography}{}
+		\bibitem{KK} S. Kiselev, A. Kupavskii, {\it Sharp bounds for the chromatic number of random Kneser graphs}
+	\end{thebibliography}
+	
+	
+	
+\end{document}
